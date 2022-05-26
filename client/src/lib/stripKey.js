@@ -1,0 +1,2 @@
+export const stripKey = fetch("https://crma-pay-developer-edition.na163.force.com/InteractPay/services/apexrest/crma_pay/InteractPayAuthorization/?methodType=GET&inputParams={}")
+.then(response => response.json())

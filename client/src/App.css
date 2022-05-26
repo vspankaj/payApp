@@ -1,0 +1,45 @@
+.left {
+  position: absolute;
+  left: 0;
+  width: 60vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #fff, #fff);
+    z-index: -1;
+}
+.right {
+  position: absolute;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+.right .strip-top {
+  width: calc(50vw + 90px);
+  transform: skewX(20deg) translateX(160px);
+}
+.right .strip-bottom {
+  width: calc(50vw + 40px);
+  transform: skewX(-15deg) translateX(90px);
+}
+.strip-bottom,
+.strip-top {
+  position: absolute;
+  right: 0;
+  height: inherit;
+  background-image: linear-gradient(to bottom, #bbd6ff, #06367d);
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+}
+.strip-bottom {
+  width: 200px;
+  transform: skewX(-15deg) translateX(50px);
+}
+.strip-top {
+  width: 180px;
+  transform: skewX(20deg) translateX(50px);
+}
+.payment-background {
+  position: fixed;
+  width: 100%;
+  z-index: -3;
+}
